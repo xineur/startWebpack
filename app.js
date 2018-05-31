@@ -1,3 +1,8 @@
-import index from './index'
+import esmould from './esmould'
 
-console.log(index(1,2))
+console.log('esmould'+esmould(1,2));
+
+
+var commons = require('./common')
+
+console.log('commons'+commons(2,1))
