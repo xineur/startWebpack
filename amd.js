@@ -1,5 +1,5 @@
-define(function(a,b){
-	return function(){
+define(function(){
+	return function(a,b){
 		a*b
 	}
 })
