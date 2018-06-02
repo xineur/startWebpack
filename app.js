@@ -10,5 +10,5 @@ console.log('commons'+commons(2,1));
 
 //amd
 require(['amd'],(amd)=>{
-	console.log(amd(1,2))
+	console.log(amd(1,2));
 })
