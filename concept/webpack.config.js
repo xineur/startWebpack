@@ -1,9 +1,13 @@
 const path = require('path');
+var name = Math.random().toString(36,2).split('.')[1];
 const config = {
-	entry: './main.js',   	//入口文件
+	entry: {
+		main:'./main.js',
+		app: './app.js'
+	},   	//入口文件
 	output:{				//出口
 		path: path.resolve(__dirname, 'dist'),	//出口位置
-		filename: 'bundle.js'		//出口文件名
+		filename: `${name}.js`		//出口文件名
 	},
 	module:{
 		rules:[{
@@ -11,6 +15,8 @@ const config = {
 		}]
 	}
 };
+
+
 
 
 module.exports = config;
