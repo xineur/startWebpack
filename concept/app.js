@@ -1,1 +1,1 @@
-console.log(2)
+import css from './style.css'
