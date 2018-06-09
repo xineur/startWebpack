@@ -38,7 +38,7 @@
 #####4 loader		用于对模块的源代码进行转换
 ```
 	module.exprets = {
-		mould: {						//module.rules 允许你在 webpack 配置中指定多个 loader
+		mould: {						//module.rules 允许你在 webpack配置中指定多个 loader
 			rules: {					
 				text: /\.css$/, 		//参与规则的文件
 				use: ['style-loader','css-loader'],		//规则
