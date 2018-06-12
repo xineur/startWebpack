@@ -19,7 +19,7 @@
 			filename: 'boundle.js',		//输出文件名    单文件
 			filename: '[name].js',		//输出文件名	多文件
 			filename: '[chunkhash].js',	//输出文件名    多文件随机字符串用于开发模式
-			path: __dirname + '/dist'	//输出路径
+			path: __dirname + '/dist' 	//输出路径
 		}
 	}
 ```
