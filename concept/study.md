@@ -24,7 +24,7 @@
 	}
 ```
 
-#####3 模式			mode 
+#####3 模式			mode
 ```
 	development		//为开发提供工具
 	production		//在生产模式下的优化
