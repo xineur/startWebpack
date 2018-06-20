@@ -21,13 +21,13 @@
 			filename: '[chunkhash].js',	//输出文件名    多文件随机字符串用于开发模式
 			path: __dirname + '/dist' 	//输出路径
 		}
-	}
+	} 
 ```
 
 #####3 模式			mode
 ```
 	development		//为开发提供工具
-	production		//在生产模式下的优化
+	production 		//在生产模式下的优化
 	none			//不使用
 
 	module.exprets = {
