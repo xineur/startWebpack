@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=production webpack --mode production --config build/webpack.config.js",
-    "dev": "webpack-dev-server --no-inline --mode development --config build/webpack.config.js"
+    "dev": "webpack-dev-server --mode development --config build/webpack.config.js"
   },
   "author": "siyue",
   "license": "ISC",

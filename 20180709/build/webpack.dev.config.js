@@ -1,20 +1,21 @@
 let webpack = require('webpack');
 const path = require('path');
 
-//function resolve(dir){
-//	return path.join(path.resolve,dir)
-//}
+function resolve(dir){
+	return path.join(path.resolve('./'), dir)
+}
 
-
+console.log(resolve('dist'))
 module.exports = {
     plugins: [
        new webpack.HotModuleReplacementPlugin(),
     ],
     devServer: {
-        contentBase: "../dist",
-        compress: true,
+        contentBase: resolve('dist'),
+        // compress: true,
         port: 9000,
-        noInfo: false,
+        
+        // noInfo: false,
     },
     module: {
 		rules: [{
