@@ -1,7 +1,7 @@
 {
   "name": "webpack-cli",
   "version": "1.0.0",
-  "description": "基于 webpack 的多页面脚手架",
+  "description": "webpack",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --content-base --progress --config build/webpack.dev.conf.js",
