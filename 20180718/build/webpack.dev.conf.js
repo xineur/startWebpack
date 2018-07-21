@@ -15,7 +15,7 @@ const PORT = process.env.PORT && Number(process.env.PORT);
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: [{
-      test: /\.(css|scss|less|styl)$/,
+      test: /\.(css|less)$/,
       use: ExtractTextPlugin.extract({
         fallback: 'style-loader',
         use: [{
@@ -25,10 +25,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
               minimize: ''
             }
           },
-          'sass-loader',
           'less-loader',
-          'stylus-loader',
-          'postcss-loader'
         ]
       })
     }]
@@ -37,12 +34,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   devServer: {
     clientLogLevel: 'warning',
     historyApiFallback: true,
-    // hot: true,
+    hot: true,
     // inline:true,
     compress: true,
     host: HOST || config.dev.host,
     port: PORT || config.dev.port,
-    open: config.dev.autoOpenBrowser,
+    open: false,
     overlay: config.dev.errorOverlay ? {
       warnings: false,
       errors: true

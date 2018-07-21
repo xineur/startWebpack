@@ -1,3 +1,3 @@
-import '../css/reset.scss';
-import '../css/index.scss';
-console.log('%c webpack-cli V1.0.0', 'line-height:1;font-size:15px;color:#1C78C0;');
+setTimeout(()=>{
+	console.log(1231234)
+},123);

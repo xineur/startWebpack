@@ -16,7 +16,7 @@ const env = require('../config/prod.env');
 const webpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: [{
-      test: /\.(css|scss|less|styl)$/,
+      test: /\.(css|less)$/,
       use: ExtractTextPlugin.extract({
         fallback: 'style-loader',
         use: [{
@@ -26,10 +26,7 @@ const webpackConfig = merge(baseWebpackConfig, {
               minimize: ''
             }
           },
-          'sass-loader',
-          'less-loader',
-          'stylus-loader',
-          'postcss-loader'
+          'less-loader'
         ],
         publicPath: '../../'
       })
