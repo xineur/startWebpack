@@ -1,4 +1,4 @@
-import common from('./src/common.js')
+import common from './commonss.js' 
 export default ()=>{
 	common();
 	console.log('this is bjs')

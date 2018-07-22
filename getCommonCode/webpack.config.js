@@ -4,7 +4,9 @@ const path = require('path');
 
 const config = {
 	entry:{
-		c: './src/c.js'
+		c: './src/c.js',
+		d: './src/d.js',
+		ventor 'jquery'
 	},
 	output:{
 		path: path.resolve(__dirname,'./dist'),
@@ -20,6 +22,10 @@ const config = {
 			//children: ,//
 			//deepChildren: ,//
 			//assync: ''//創建一個異步的公共代碼塊
+		}),
+		new webpack.optimize.CommonsChunkPlugin({
+			name: 'ventor',//chunk名稱
+			minChunks: Infinity,
 		})
 	]
 }

@@ -1,8 +1,8 @@
-import a from './src/a.js'
-import b from './src/b.js'
+import a from './a.js'
+import b from './b.js'
 
 export default ()=>{
-	a();
-	b();
+	// a();
+	// b();
 	console.log('this is cjs')
 }
