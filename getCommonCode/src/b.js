@@ -1,5 +1,3 @@
-import common from './commonss.js' 
-export default ()=>{
-	common();
-	console.log('this is bjs')
+module.exports = ()=>{
+	console.log('this is b')
 }

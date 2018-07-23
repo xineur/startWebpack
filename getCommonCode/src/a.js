@@ -1,5 +1,3 @@
-import commonss from './commonss.js';
-export default ()=>{
-	common();
+module.exports = ()=>{
 	console.log('this is a')
 }

@@ -1,8 +1,10 @@
-import a from './a.js'
-import b from './b.js'
+// import('./a.js').then((a,b)=>{
+// 	a()//this is a
+// });
 
-export default ()=>{
-	// a();
-	// b();
-	console.log('this is cjs')
-}
+import(/* webpackChunkName:'a' */'./a.js').then((a,b)=>{
+	a()
+});
+import(/* webpackChunkName:'b' */'./b.js').then((a,b)=>{
+	a()
+});
