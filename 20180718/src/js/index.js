@@ -1,3 +1,3 @@
-setTimeout(()=>{
-	console.log(1231234)
-},123);
+import {page,config} from './page'
+
+console.log(page)
