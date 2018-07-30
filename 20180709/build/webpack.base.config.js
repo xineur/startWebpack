@@ -16,26 +16,27 @@ let happyThreadPool = HappyPack.ThreadPool({
 let resolve = (dir) => {
 	return path.join(path.resolve('./'), dir)
 }
+console.log(resolve('src/main.js'))
 
 let html1 = new htmlWebpackPlugin({
 		filename: 'index.html',
 		template: resolve('index.html'),
 		title: 'webpackpage',
-		inject: true
-	}),
-	html2 = new htmlWebpackPlugin({
-		filename: 'index2.html',
-		template: resolve('index2.html'),
-		title: 'webpackpage',
-		inject: true,
-		hash: true,
-		chunks: ['main']
+		// inject: true
+	// }),
+	// html2 = new htmlWebpackPlugin({
+	// 	filename: 'index2.html',
+	// 	template: resolve('index2.html'),
+	// 	title: 'webpackpage',
+	// 	inject: true,
+	// 	hash: true,
+	// 	chunks: ['main']
 	});
 
 const config = {
-	entry: confi.entry,
+	entry: resolve('src/main.js'),
 	output: {
-		path: resolve('dist'),
+		path: resolve('dist'), 
 		filename: 'static/js/[name].js',
 //		publicPath: '/static/'
 	},
@@ -66,7 +67,7 @@ const config = {
 			threadPool: happyThreadPool,
 			verbose: true
 		}),
-		html1, html2,
+		html1, //html2,
 		new cleanWebpackPlugin(['dist'], { //匹配删除的文件
 			root: path.resolve('./'), //删除路径
 			verbose: true, //是否开启在控制台输出信息
