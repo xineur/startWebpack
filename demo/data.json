@@ -1,0 +1,55 @@
+{
+	"static": 1,
+	"data": [{
+		"name": "srx",
+		"gender": "man",
+		"coat": "T-shirt",
+		"trousers": "mtionPants"
+	},{
+		"name": "srx",
+		"gender": "man",
+		"coat": "T-shirt",
+		"trousers": "mtionPants"
+	},{
+		"name": "srx",
+		"gender": "man",
+		"coat": "T-shirt",
+		"trousers": "mtionPants"
+	},{
+		"name": "srx",
+		"gender": "man",
+		"coat": "T-shirt",
+		"trousers": "mtionPants"
+	},{
+		"name": "srx",
+		"gender": "man",
+		"coat": "T-shirt",
+		"trousers": "mtionPants"
+	},{
+		"name": "srx",
+		"gender": "man",
+		"coat": "T-shirt",
+		"trousers": "mtionPants"
+	},{
+		"name": "srx",
+		"gender": "man",
+		"coat": "T-shirt",
+		"trousers": "mtionPants"
+	},{
+		"name": "srx",
+		"gender": "man",
+		"coat": "T-shirt",
+		"trousers": "mtionPants"
+	},{
+		"name": "srx",
+		"gender": "man",
+		"coat": "T-shirt",
+		"trousers": "mtionPants"
+	},{
+		"name": "nn",
+		"gender": "woman",
+		"coat": "T-shirt",
+		"trousers": "mtionPants"
+	}],
+	"count": 10
+}

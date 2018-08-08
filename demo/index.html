@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+</head>
+<style>
+	body,html,.content{
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+		overflow-x: hidden;
+	}
+	.content{
+		overflow-y: auto;
+	}
+	p{
+		height: 30px;
+		line-height:30px;
+	}
+</style>
+<body>
+<div class="content">
+	<div class="wrapper">
+		
+	</div>
+</div>
+</body>
+<script src="./jquery.min.js"></script>
+<script>
+	function getData(){
+		$('.wrapper').append('<p class="textLoading">加载中</p>');
+		$.get('./data.json',function(res){
+			var html = '';
+			for(var i = 0; i < res.data.length; i++){
+				var m = res.data[i];
+				html += '<p>'+m.name+'</p>'
+			}
+			$('.textLoading').remove();
+			$('.wrapper').append(html);
+			if($('.wrapper').height() <= $('.content').height() + 50){
+				getData();
+			}
+		});
+	}
+	getData();
+	$('.content').on('scroll',function(e){
+		if(e.target.scrollTop + $(this).height() > $('.wrapper').height() - 50){
+			getData();
+		}
+	})
+	
+</script>
+</html>
